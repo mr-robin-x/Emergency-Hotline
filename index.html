@@ -32,13 +32,15 @@
   </head>
   <body>
     <!-- nav-section -->
-    <div class="secction mx-auto flex justify-between max-w-[1920px] px-8 py-6">
+    <div class="secction mx-auto flex justify-between w-full px-8 py-6">
       <div class="left flex items-center gap-1">
         <div>
           <img class="h-[30px] w-[30px]" src="./assets/logo.png" alt="" />
         </div>
         <div>
-          <div class="flex flex-col font-black text-[15px] text-[#006747]">
+          <div
+            class="flex flex-col font-black text-[11px] sm:text-[15px] text-[#006747]"
+          >
             <h2 class="leading-none">Emergency</h2>
             <h3 class="leading-none">Service</h3>
           </div>
@@ -46,9 +48,9 @@
       </div>
       <div class="right flex items-center gap-2">
         <div
-          class="flex-1 flex items-center px-7 py-2 bg-green-100 rounded-[50px]"
+          class="flex-1 flex items-center px-4 py-2 sm:px-7 sm:py-2 bg-green-100 rounded-[50px]"
         >
-          <span class="inter font-black text-[13px]">0</span
+          <span class="inter font-black text-[11px] sm:text-[13px]">0</span
           ><img
             class="w-[15px] h-[15px] inline ml-1"
             src="./assets/heart.png"
@@ -56,7 +58,7 @@
           />
         </div>
         <div
-          class="flex-1 flex items-center px-7 py-2 bg-green-100 rounded-[50px]"
+          class="flex-1 flex items-center px-4 py-2 sm:px-7 sm:py-2 bg-green-100 rounded-[50px]"
         >
           <span class="font-black text-[12px] inter">100</span
           ><img
@@ -66,16 +68,20 @@
           />
         </div>
         <div
-          class="flex-1 flex items-center gap-1 px-7 py-2 bg-green-600 rounded-[50px]"
+          class="flex-1 flex items-center gap-1 px-4 py-2 sm:px-7 sm:py-2 bg-green-600 rounded-[50px]"
         >
-          <span class="inter font-[400] text-white text-[13px]">0 </span>
-          <p class="inter font-[400] text-white text-[13px]">Copy</p>
+          <span class="inter font-[400] text-white text-[10px] sm:text-[13px]"
+            >0
+          </span>
+          <p class="inter font-[400] text-white text-[10px] sm:text-[13px]">
+            Copy
+          </p>
         </div>
       </div>
     </div>
     <!-- hero-section -->
     <div
-      class="madurai hero max-w-[1920px] mx-auto bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] p-5"
+      class="madurai hero w-full mx-auto bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] p-5"
     >
       <div class="flex flex-col justify-center items-center">
         <img
@@ -84,25 +90,393 @@
           alt=""
         />
 
-        <h2 class="font-semibold text-[30px] text-white mb-[11px]">
+        <h2
+          class="font-semibold text-[20px] sm:text-[30px] text-white mb-[11px]"
+        >
           জরুরি সেবা ডিরেক্টরি
         </h2>
 
-        <p class="font-semibold text-[15px] text-white">
+        <p
+          class="font-semibold text-[10px] text-center sm:text-[15px] text-white"
+        >
           Government Emergency Services at Your Fingertip – A Project by
           Government of the People’s Republic of Bangladesh
         </p>
       </div>
     </div>
-    <div class="main max-w-[1920px] h-[100px] mx-auto bg-green-100">
-      <div class="flex max-w-[1800px] justify-around mx-auto gap-6">
-        <div class="border-2 border-red-500 left flex-3">
-          <div class="card w-[336px] h-[260px] bg-base-100 card-xl shadow-sm">
-            <div class="card-body"></div>
+    <!-- flex and grid section -->
+    <div class="main w-full p-3 sm:pb-20 mx-auto bg-[#41FF6B1A]">
+      <div class="flex max-w-[1825px] justify-around mx-auto gap-1 sm:gap-6">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-3 items-center gap-5 madurai flex-3 mt-10"
+        >
+          <div class="card flex-1 bg-base-100 p-5 shadow-sm">
+            <div>
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <div class="p-2 bg-[#FFE3E2] opacity-100 rounded-xl">
+                    <img class="h-[20px]" src="./assets/emergency.png" alt="" />
+                  </div>
+
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="">
+                  <h2 class="font-black text-[18px]">জাতীয় জরুরি সেবা</h2>
+                  <p class="roboto text-[#5C5C5C] text-sm">
+                    National Emergency
+                  </p>
+
+                  <div class="mt-5 mb-8">
+                    <p class="roboto font-extrabold text-3xl">999</p>
+                    <p
+                      class="px-3 py-1 text-[#5C5C5C] w-fit rounded-3xl bg-gray-200 font-[400] text-base"
+                    >
+                      সার্বজনীন
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <button class="btn greembtn flex-1 !text-gray-500 text-">
+                    <i class="fa-solid fa-copy"></i>
+                    copy
+                  </button>
+                  <button class="btn greembtn flex-1 !bg-green-600 !text-white">
+                    <i class="fa-solid fa-phone"></i>
+                    Call
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card flex-1 bg-base-100 p-5 shadow-sm">
+            <div>
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <div class="p-2 bg-[#DFEFFF] opacity-100 rounded-xl">
+                    <img class="h-[20px]" src="./assets/police.png" alt="" />
+                  </div>
+
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="">
+                  <h2 class="font-black text-[18px]">পুলিশ</h2>
+                  <p class="roboto text-[#5C5C5C] text-sm">Police</p>
+
+                  <div class="mt-5 mb-8">
+                    <p class="roboto font-extrabold text-3xl">999</p>
+                    <p
+                      class="px-3 py-1 text-[#5C5C5C] w-fit rounded-3xl bg-gray-200 font-[400] text-base"
+                    >
+                      পুলিশ
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <button class="btn greembtn flex-1 !text-gray-500 text-">
+                    <i class="fa-solid fa-copy"></i>
+                    copy
+                  </button>
+                  <button class="btn greembtn flex-1 !bg-green-600 !text-white">
+                    <i class="fa-solid fa-phone"></i>
+                    Call
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card flex-1 bg-base-100 p-5 shadow-sm">
+            <div>
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <div class="p-2 bg-[#FFE3E2] opacity-100 rounded-xl">
+                    <img
+                      class="h-[20px]"
+                      src="./assets/fire-service.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="">
+                  <h2 class="font-black text-[18px]">ফায়ার সার্ভিস</h2>
+                  <p class="roboto text-[#5C5C5C] text-sm">Fire Service</p>
+
+                  <div class="mt-5 mb-8">
+                    <p class="roboto font-extrabold text-3xl">999</p>
+                    <p
+                      class="px-3 py-1 text-[#5C5C5C] w-fit rounded-3xl bg-gray-200 font-[400] text-base"
+                    >
+                      ফায়ার
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <button class="btn greembtn flex-1 !text-gray-500 text-">
+                    <i class="fa-solid fa-copy"></i>
+                    copy
+                  </button>
+                  <button class="btn greembtn flex-1 !bg-green-600 !text-white">
+                    <i class="fa-solid fa-phone"></i>
+                    Call
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card flex-1 bg-base-100 p-5 shadow-sm">
+            <div>
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <div class="p-2 bg-[#FFE3E2] opacity-100 rounded-xl">
+                    <img class="h-[20px]" src="./assets/ambulance.png" alt="" />
+                  </div>
+
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="">
+                  <h2 class="font-black text-[18px]">অ্যাম্বুলেন্স</h2>
+                  <p class="roboto text-[#5C5C5C] text-sm">Ambulance</p>
+
+                  <div class="mt-5 mb-8">
+                    <p class="roboto font-extrabold text-3xl">1994-999999</p>
+                    <p
+                      class="px-3 py-1 text-[#5C5C5C] w-fit rounded-3xl bg-gray-200 font-[400] text-base"
+                    >
+                      স্বাস্থ্য
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <button class="btn greembtn flex-1 !text-gray-500 text-">
+                    <i class="fa-solid fa-copy"></i>
+                    copy
+                  </button>
+                  <button class="btn greembtn flex-1 !bg-green-600 !text-white">
+                    <i class="fa-solid fa-phone"></i>
+                    Call
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card flex-1 bg-base-100 p-5 shadow-sm">
+            <div>
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <div class="p-2 bg-[#FFE3E2] opacity-100 rounded-xl">
+                    <img class="h-[20px]" src="./assets/emergency.png" alt="" />
+                  </div>
+
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="">
+                  <h2 class="font-black text-[18px]">নারী ও শিশু সহায়তা</h2>
+                  <p class="roboto text-[#5C5C5C] text-sm">
+                    Women & Child Helpline
+                  </p>
+
+                  <div class="mt-5 mb-8">
+                    <p class="roboto font-extrabold text-3xl">109</p>
+                    <p
+                      class="px-3 py-1 text-[#5C5C5C] w-fit rounded-3xl bg-gray-200 font-[400] text-base"
+                    >
+                      সহায়তা
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <button class="btn greembtn flex-1 !text-gray-500 text-">
+                    <i class="fa-solid fa-copy"></i>
+                    copy
+                  </button>
+                  <button class="btn greembtn flex-1 !bg-green-600 !text-white">
+                    <i class="fa-solid fa-phone"></i>
+                    Call
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card flex-1 bg-base-100 p-5 shadow-sm">
+            <div>
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <div class="p-2 bg-[#FFE3E2] opacity-100 rounded-xl">
+                    <img class="h-[20px]" src="./assets/emergency.png" alt="" />
+                  </div>
+
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="">
+                  <h2 class="font-black text-[18px]">দুদক</h2>
+                  <p class="roboto text-[#5C5C5C] text-sm">Anti-Corruption</p>
+
+                  <div class="mt-5 mb-8">
+                    <p class="roboto font-extrabold text-3xl">106</p>
+                    <p
+                      class="px-3 py-1 text-[#5C5C5C] w-fit rounded-3xl bg-gray-200 font-[400] text-base"
+                    >
+                      সরকারি
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <button class="btn greembtn flex-1 !text-gray-500 text-">
+                    <i class="fa-solid fa-copy"></i>
+                    copy
+                  </button>
+                  <button class="btn greembtn flex-1 !bg-green-600 !text-white">
+                    <i class="fa-solid fa-phone"></i>
+                    Call
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card flex-1 bg-base-100 p-5 shadow-sm">
+            <div>
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <div class="p-2 bg-[#FFE3E2] opacity-100 rounded-xl">
+                    <img class="h-[20px]" src="./assets/emergency.png" alt="" />
+                  </div>
+
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="">
+                  <h2 class="font-black text-[18px]">বিদ্যুৎ বিভ্রাট</h2>
+                  <p class="roboto text-[#5C5C5C] text-sm">
+                    Electricity Outage
+                  </p>
+
+                  <div class="mt-5 mb-8">
+                    <p class="roboto font-extrabold text-3xl">16216</p>
+                    <p
+                      class="px-3 py-1 text-[#5C5C5C] w-fit rounded-3xl bg-gray-200 font-[400] text-base"
+                    >
+                      বিদ্যুৎ
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <button class="btn greembtn flex-1 !text-gray-500 text-">
+                    <i class="fa-solid fa-copy"></i>
+                    copy
+                  </button>
+                  <button class="btn greembtn flex-1 !bg-green-600 !text-white">
+                    <i class="fa-solid fa-phone"></i>
+                    Call
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card flex-1 bg-base-100 p-5 shadow-sm">
+            <div>
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <div class="p-2 bg-[#FFE3E2] opacity-100 rounded-xl">
+                    <img class="h-[20px]" src="./assets/brac.png" alt="" />
+                  </div>
+
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="">
+                  <h2 class="font-black text-[18px]">ব্র্যাক</h2>
+                  <p class="roboto text-[#5C5C5C] text-sm">Brac</p>
+
+                  <div class="mt-5 mb-8">
+                    <p class="roboto font-extrabold text-3xl">16445</p>
+                    <p
+                      class="px-3 py-1 text-[#5C5C5C] w-fit rounded-3xl bg-gray-200 font-[400] text-base"
+                    >
+                      এনজিও
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <button class="btn greembtn flex-1 !text-gray-500 text-">
+                    <i class="fa-solid fa-copy"></i>
+                    copy
+                  </button>
+                  <button class="btn greembtn flex-1 !bg-green-600 !text-white">
+                    <i class="fa-solid fa-phone"></i>
+                    Call
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card flex-1 bg-base-100 p-5 shadow-sm">
+            <div>
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <div class="p-2 bg-[#FFE3E2] opacity-100 rounded-xl">
+                    <img
+                      class="h-[20px]"
+                      src="./assets/Bangladesh-Railway.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="">
+                  <h2 class="font-black text-[18px]">বাংলাদেশ রেলওয়ে</h2>
+                  <p class="roboto text-[#5C5C5C] text-sm">
+                    Bangladesh Railway
+                  </p>
+
+                  <div class="mt-5 mb-8">
+                    <p class="roboto font-extrabold text-3xl">163</p>
+                    <p
+                      class="px-3 py-1 text-[#5C5C5C] w-fit rounded-3xl bg-gray-200 font-[400] text-base"
+                    >
+                      পরিবহন
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <button class="btn greembtn flex-1 !text-gray-500 text-">
+                    <i class="fa-solid fa-copy"></i>
+                    copy
+                  </button>
+                  <button class="btn greembtn flex-1 !bg-green-600 !text-white">
+                    <i class="fa-solid fa-phone"></i>
+                    Call
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="border-2 border-red-500 bg-white rigth flex-1">
-          <h2>this is flex</h2>
+        <div class="bg-white rigth flex-3 sm:flex-1 mt-10">
+          <div class="p-4">
+            <div class="flex justify-between items-center mb-2">
+              <p class="font-semibold text-[11px] sm:text-base">
+                <i class="fa-regular text-gray-400 fa-clock"></i> Call History
+              </p>
+              <button
+                class="inter font-[400] text-white text-[10px] sm:text-[13px] bg-green-600 rounded-[50px] w-fit px-3 py-1 sm:px-5 sm:py-2"
+              >
+                Clear
+              </button>
+            </div>
+            <div
+              class="bg-[#FAFAFA] sm:p-3 rounded-lg flex justify-between items-center"
+            >
+              <div class="font-[400] madurai text-[11px] sm:text-[16px]">
+                <p class="text-[#111111]">জাতীয় জরুরি সেবা</p>
+                <p class="text-[#5C5C5C]">999</p>
+              </div>
+              <p
+                class="font-[400] madurai text-[11px] sm:text-[16px] text-[#111111]"
+              >
+                Time 09:12:50
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
