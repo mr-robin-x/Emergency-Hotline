@@ -20,9 +20,14 @@ for (const single of classes) {
 const coping = document.getElementsByClassName("copying");
 for (const single of coping) {
   single.addEventListener("click", function () {
+    const num = this.closest(".card");
+    const text = num.querySelector(".calling");
+    const inner = text.innerText;
+    navigator.clipboard.writeText(inner);
+    alert(`✅সংখ্যাটি কপি করা হয়েছে : ${inner}`);
+
     const total = inner_text("coppy") + 1;
     document.getElementById("coppy").innerText = total;
-    console.log(total);
   });
 }
 
