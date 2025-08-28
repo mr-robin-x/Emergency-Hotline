@@ -17,6 +17,15 @@ for (const single of classes) {
     console.log(total);
   });
 }
+const coping = document.getElementsByClassName("copying");
+for (const single of coping) {
+  single.addEventListener("click", function () {
+    const total = inner_text("coppy") + 1;
+    document.getElementById("coppy").innerText = total;
+    console.log(total);
+  });
+}
+
 // ...classes.item.apply.apply.apply.apply.apply.
 const calls = document.getElementsByClassName("call-btn");
 for (const single of calls) {
